@@ -270,7 +270,7 @@ namespace treehouse
                       }
                     }
                     Circle circle = new Circle(diameter);
-                    circle.ToString();
+                    Console.WriteLine(circle.ToString());
                     Console.WriteLine("Job Done!"); //calculation done
                     continue;
                 }
