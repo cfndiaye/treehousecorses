@@ -264,7 +264,7 @@ namespace treehouse
                     }
                     Circle circle = new Circle(diameter);
                     Circle.ToString();
-                    Console.WriteLine("Job Done!");
+                    Console.WriteLine("Job Done!"); //calculation done
                     continue;
                 }
                 if(entry.ToLower() == "q"){
