@@ -277,7 +277,7 @@ namespace treehouse
                     double A =0.0;
                     double B =0.0;
                     double C =0.0;
-                    //Console.WriteLine("Entrer first Dimension:");
+                  
                     while(true)
                     {
                         Console.WriteLine("Entrer first Dimension:");
