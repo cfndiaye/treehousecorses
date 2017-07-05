@@ -1,3 +1,10 @@
+/*
+Welcome all
+this is sample code for practice c# with teamtreehouse.com
+if you find any bug or mistake please contact me cfndiaye@gmail.com
+Thank you
+ */
+
 using System;
 namespace treehouse
 {
@@ -251,7 +258,7 @@ namespace treehouse
                     Console.WriteLine("Circle calculation!");
                     double diameter = 0.0;
                     while (true) {
-                      Console.WriteLine("Enter the diameter of Circle:")
+                      Console.WriteLine("Enter the diameter of Circle:");
                       var d = Console.ReadLine();
                       try{
                         diameter = double.Parse(d);
@@ -263,7 +270,7 @@ namespace treehouse
                       }
                     }
                     Circle circle = new Circle(diameter);
-                    Circle.ToString();
+                    circle.ToString();
                     Console.WriteLine("Job Done!"); //calculation done
                     continue;
                 }
