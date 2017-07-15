@@ -18,10 +18,18 @@ namespace treehouse
             }
 
             var fileName = Path.Combine(directory.FullName,"data.txt");
-            using (var reader = new StreamReader(fileName))
+            var fileToRead = new FileInfo(fileName);
+            if(fileToRead.Exists)
             {
-                Console.SetIn(reader);
-                Console.WriteLine(Console.ReadLine());
+                using (var reader = new StreamReader(fileName))
+                {
+                    Console.SetIn(reader);
+                    Console.WriteLine(Console.ReadLine());
+                }
+            }
+            else
+            {
+                Console.WriteLine("File not found");
             }
         }
     }
