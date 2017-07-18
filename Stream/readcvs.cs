@@ -22,7 +22,10 @@ namespace treehouse
             if(fileToRead.Exists)
                 {
                     var fileContent = ReadFile(fileName);
-                    Console.WriteLine(fileContent);
+                    string[] fileLines = fileContent.Split(new char[]{'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var line in fileLines){
+                    Console.WriteLine(line);
+                    }
                 }
                 else
                 {
